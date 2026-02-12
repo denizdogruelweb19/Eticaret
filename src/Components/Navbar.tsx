@@ -1,10 +1,10 @@
 import React from "react";
 
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; 
-import "/bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function NavBar() {
   return (
   <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
   <div className="container-fluid">
@@ -14,7 +14,7 @@ function Navbar() {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav ms-auto">
         <li className="nav-item">
-          <a className="nav-link " aria-current="page" ><Link to={"/ProductList"}/></a>
+        <Link className="nav-link" to={"ProductList"}>ProductList</Link>
         </li>
         
       </ul>
@@ -22,4 +22,4 @@ function Navbar() {
   </div>
 </nav>
   )
-}export default Navbar
+}export default NavBar
