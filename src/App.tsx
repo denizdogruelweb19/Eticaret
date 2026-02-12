@@ -5,6 +5,7 @@ import ProductList from './Components/ProductList'
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ProductAppProvider } from './Components/ContextApi';
+import ProductDetails from './Components/ProductDetails';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path={"ProductList"} element={<ProductList />} />
+          <Route path={`/ProductDetails/:id`} element={<ProductDetails/>}></Route>
         </Routes>
       </Router>
     </ProductAppProvider>
